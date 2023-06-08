@@ -15,7 +15,46 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+    <picture>	
+      <!-- landscape images -->	
+      <!-- ================================================================================================================== -->
+      <source srcset="images/lndscape-320px.jpg,	
+                      images/lndscape-640px.jpg 2x,	
+                      images/lndscape-960px.jpg 3x" media="(max-width:320px)">	
+
+      <source srcset="images/lndscape-480px.jpg,	
+                      images/lndscape-960px.jpg 2x,	
+                      images/lndscape-1440px.jpg 3x" media="(max-width:480px)">
+
+      <source srcset="images/lndscape-720px.jpg,	
+                      images/lndscape-1440px.jpg 2x,	
+                      images/landscape_2160px.jpg 3x" media="(max-width:720px)">	
+
+      <source srcset="images/lndscape-960px.jpg,	
+                      images/lndscape-1920px.jpg 2x,	
+                      images/lndscape-2880px.jpg 3x" media="(max-width:960px)">	
+      <!-- ================================================================================================================== -->
+
+
+      <!-- square images -->	
+      <!-- ================================================================================================================== -->
+      <source srcset="images/sqr-800px.jpg,	
+                      images/sqr-1600px.jpg 2x,	
+                      images/sqr-2400px.jpg 3x" media="(min-width:1600px)">	
+  	
+      <source srcset="images/sqr-640px.jpg,	
+                      images/sqr-1280px.jpg 2x,	
+                      images/sqr-1920px.jpg 3x" media="(min-width:1280px)">	
+  	
+      <source srcset="images/sqr-480px.jpg,	
+                      images/sqr-960px.jpg 2x,	
+                      images/sqr-1440px.jpg 3x" media="(min-width:960px)">	
+      <!-- ================================================================================================================== -->
+  	
+      <img class="original-img" src="images/museum.jpg"	
+        alt="a picture room in a museum">	
+      
+    </picture>
 
   </header>
 </body>
